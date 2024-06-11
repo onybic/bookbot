@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 def main():
     book_path = "./books/fankenstein.txt"
     text = get_text(book_path)
@@ -19,7 +16,7 @@ def main():
             continue
         print(f"The '{character['char']}' character was found '{character['num']}' times")
 
-    print("-------- End of raport ----------")
+    print("-------- End of report ----------")
 def get_text(path):
     with open(path) as f:
         return f.read()
